@@ -1,0 +1,104 @@
+body {
+    background-color: #F2D8A7;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.chat {
+    border: 1px solid black;
+    background-color: #458C6B;
+    padding: 10px 10px 10px 10px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.chatarea {
+    position:   relative;
+    height:     500px;
+    border: 1px solid black;
+    background-color: #D9A86C;
+}
+
+.messages {
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 500px;
+}
+
+.command {
+    padding: 0;
+    margin: 0;
+    background-color: #458C6B;
+}
+
+.command form {
+    margin: 0;
+}
+
+.chat p {
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.users {
+    border: 1px solid black;
+    height: 556px;
+    background-color: #D94436;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.users header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 1px;
+    background-color: #458C6B;
+    -moz-border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.action {
+    color: #D94436;
+    font-style: italic;
+}
+
+.privateMsg {
+    color: #458C6B;
+}
+
+.privateMsg .username {
+    color: #D94436;
+}
+
+.announcement {
+    color: #D94436;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.users li {
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+.users li i {
+    margin-right: 15px;
+}
+
+.users li:hover {
+    background-color: #A62424;
+    cursor: pointer;
+}
+
+.nameChange {
+    font-style: italic;
+}

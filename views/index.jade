@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  div.main.container-fluid(ng-controller='AppCtrl')
+    .row-fluid
+      section.chat.span7.offset1
+        section.chatarea.row-fluid
+          section.messages(scroll-glue, ng-model="glued")
+            p(ng-repeat='message in messages')
+              span(ng-bind-html-unsafe='message') {{message}}
+        section.command.input-append.row-fluid
+          form.form-inline.span12(ng-submit='sendMessage()')
+            input.span9(type="text", placeholder='Enter message or /help', ng-model='message', id='msg',
+              autocomplete='off')
+            button.btn(type='submit', id='msgSubmit') Send
+            div.btn-group
+              button.btn.dropdown-toggle(data-toggle='dropdown', id='actionBtn') Actions
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#', ng-click='nameChangeMsg()') Change Name
+                li
+                  a(href='#', ng-click='actionMsg()') Action Msg
+                li
+                  a(href='#', ng-click='privateMsg()') Private Msg
+      section.users.span3
+        header
+          h3 Users
+        section.userList
+          ul.unstyled
+            li(ng-repeat='user in users', ng-click='privateMsg(user)')
+              i.icon-user
+              span.user {{user}}

@@ -1,0 +1,21 @@
+doctype 5
+html(ng-app="myApp")
+  head
+    meta(charset='utf8')
+    title uChat - Now with more trolls!
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='/socket.io/socket.io.js')
+  body
+    block content
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js')
+    script(src="/js/bootstrap.min.js")
+    script(src='/js/main.js')
+    script(src="/js/scrollglue.js")
+    script(src='/js/services.js')
+    script(src='/js/controllers.js')
